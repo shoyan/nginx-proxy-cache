@@ -1,4 +1,7 @@
+// Node.js上で動くWebサーバ
+
 const http = require('http');
+
 http.createServer((req, res) => {
   setTimeout(() => {
     res.writeHead(200, {'Content-Type': 'text/plain'});
