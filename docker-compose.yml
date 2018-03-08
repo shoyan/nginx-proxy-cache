@@ -3,8 +3,8 @@ proxy:
   ports:
     - "8080:80"
   volumes:
-    - ./nginx.conf:/etc/nginx/nginx.conf
-    - ./default.conf:/etc/nginx/conf.d/default.conf
+    - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+    - ./etc/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
   links:
     - app:app
 app:
